@@ -4,4 +4,6 @@
 
   phpinfo();
 
+  echo "oi";
+
 ?>
