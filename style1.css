@@ -7,7 +7,7 @@ header.header{
 
     position:static;
     width: auto;
-    height: 150px;
+    height: 250px;
     background-color: rgb(95, 95, 95);
 
 }
@@ -34,11 +34,12 @@ div.fbcards{
     padding-bottom:60px;
     display: flex;
     flex-direction: row;
-    position: relative;
-    gap: 100px 100px;
+    column-gap: 150px;
+    row-gap: 0px;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    border: solid 3px greenyellow;
 
 }
 nav.dcdc{
@@ -46,3 +47,15 @@ nav.dcdc{
     background-color: rgb(77, 77, 77);
 
 }
+img.card-img-top{
+
+    max-height: 120px;
+
+}
+div.card{
+
+    max-height: 350px;
+    border: red 3px solid;
+
+}
+

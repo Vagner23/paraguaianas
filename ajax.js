@@ -12,3 +12,18 @@ function gerarcate(){
     catsidebar.send();
 
 }
+function gerarcards(x){
+
+    let cardss = new XMLHttpRequest();
+    cardss.onload = function(){
+
+        document.getElementById("fbcards").innerHTML = this.responseText;
+
+    }
+
+    console.log(cardss);
+
+    cardss.open("GET","cards.php");
+    cardss.send();
+
+}

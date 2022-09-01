@@ -26,7 +26,6 @@
 
             echo "<li><a href='#'>".$filrow[1]."</a></li>";
 
-
         }
         echo "</ul>";
 
