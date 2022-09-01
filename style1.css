@@ -35,11 +35,10 @@ div.fbcards{
     display: flex;
     flex-direction: row;
     column-gap: 150px;
-    row-gap: 0px;
+    row-gap: 100px;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    border: solid 3px greenyellow;
 
 }
 nav.dcdc{
@@ -55,7 +54,6 @@ img.card-img-top{
 div.card{
 
     max-height: 350px;
-    border: red 3px solid;
 
 }
 
