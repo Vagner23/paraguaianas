@@ -56,4 +56,14 @@ div.card{
     max-height: 350px;
 
 }
+a.sexo2{
+
+    color: rgb(111, 111, 235);
+
+}
+a.sexo2:hover{
+
+    color: rgb(128, 109, 197);
+
+}
 
