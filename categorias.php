@@ -24,7 +24,7 @@
 
         foreach($categfil as $filrow){
 
-            echo "<li><a href='#'>".$filrow[1]."</a></li>";
+            echo "<li><a class='sexo2' onclick='gerarcards(id)' id='".$filrow[0]."'>".$filrow[1]."</a></li>";
 
         }
         echo "</ul>";

@@ -2,7 +2,18 @@
 
 include("conexao.php");
 
-$cardres = $conn -> query('SELECT descricao,valor,imagem FROM produtos');
+
+if(!isset($_GET['q'])){
+
+    $cardres = $conn -> query('SELECT descricao,valor,imagem FROM produtos');
+
+}
+else{
+
+    $cardres = $conn -> prepare('SELECT descricao,valor,imagem FROM produtos WHERE categoria_id=:catid');
+    $cardres->execute(array('catid'=>$_GET['q']));
+
+}
 
 foreach($cardres as $produtorow){
     

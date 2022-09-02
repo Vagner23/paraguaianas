@@ -1,5 +1,5 @@
+gerarcards();
 gerarcate();
-
 function gerarcate(){
     
     let catsidebar = new XMLHttpRequest();
@@ -14,6 +14,7 @@ function gerarcate(){
 }
 function gerarcards(x){
 
+
     let cardss = new XMLHttpRequest();
     cardss.onload = function(){
 
@@ -23,7 +24,17 @@ function gerarcards(x){
 
     console.log(cardss);
 
-    cardss.open("GET","cards.php");
+    if(x!=null){
+
+        cardss.open("GET","cards.php?q="+x);
+        
+    }
+    else{
+
+        cardss.open("GET","cards.php");
+
+    }
+
     cardss.send();
 
 }
