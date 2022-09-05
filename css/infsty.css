@@ -1,0 +1,47 @@
+body{
+
+    background-color: rgb(190, 190, 190);
+
+}
+div.title{
+
+    color: rgb(0, 0, 0);
+    top: 90px;
+    position: relative;
+    margin: auto;
+    width:50%;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: 1px solid rgb(53, 53, 53);
+
+}
+div.ticont{
+
+    top: 20px;
+    position: relative;
+    border: solid 2px rgb(54, 54, 54);
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+div.info{
+
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    border: 1px solid rgb(48, 48, 48);
+    height: auto;
+
+}
+div.contai{
+
+    position: relative;
+    top: 60px;
+    margin: auto;
+    width: fit-content;
+
+}

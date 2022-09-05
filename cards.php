@@ -5,12 +5,12 @@ include("conexao.php");
 
 if(!isset($_GET['q'])){
 
-    $cardres = $conn -> query('SELECT descricao,valor,imagem FROM produtos');
+    $cardres = $conn -> query('SELECT id,descricao,valor,imagem FROM produtos');
 
 }
 else{
 
-    $cardres = $conn -> prepare('SELECT descricao,valor,imagem FROM produtos WHERE categoria_id=:catid');
+    $cardres = $conn -> prepare('SELECT id,descricao,valor,imagem FROM produtos WHERE categoria_id=:catid');
     $cardres->execute(array('catid'=>$_GET['q']));
 
 }
@@ -23,7 +23,7 @@ foreach($cardres as $produtorow){
         <div class='card-body'>
             <h5 class='card-title'>".$produtorow['valor']."</h5>
             <p class='card-text'>".$produtorow['descricao']."</p>
-            <a href='#' class='btn btn-primary'>Go somewhere</a>
+            <a href='maisinfo.php?id=".$produtorow['id']."' class='btn btn-primary'>Go somewhere</a>
         </div>
     </div>";
     

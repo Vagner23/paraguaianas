@@ -1,5 +1,3 @@
-gerarcards();
-gerarcate();
 function gerarcate(){
     
     let catsidebar = new XMLHttpRequest();
