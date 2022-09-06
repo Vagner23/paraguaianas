@@ -1,0 +1,36 @@
+div.log1 {
+  position: relative;
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  border: solid red 1px;
+  top: 100px;
+}
+div.midmid {
+  position: relative;
+  margin: auto;
+  border: blue solid 1px;
+  height: 100%;
+  width: fit-content;
+}
+div.test1 {
+  top: 40px;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  border: solid 1px yellow;
+}
+div.test2 {
+  top: 80px;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  border: solid 1px purple;
+}
+div.test3 {
+  top: 30px;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  border: solid 1px green;
+}
