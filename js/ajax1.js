@@ -1,38 +1,24 @@
-function gerarcate(){
-    
-    let catsidebar = new XMLHttpRequest();
-    catsidebar.onload = function(){
-
-        document.getElementById("catsidebar").innerHTML = this.responseText;
-
-    }
-    catsidebar.open("GET","categorias.php");
-    catsidebar.send();
-
+function gerarcate() {
+  let catsidebar = new XMLHttpRequest();
+  catsidebar.onload = function () {
+    document.getElementById("catsidebar").innerHTML = this.responseText;
+  };
+  catsidebar.open("GET", "categorias.php");
+  catsidebar.send();
 }
-function gerarcards(x){
+function gerarcards(x) {
+  let cardss = new XMLHttpRequest();
+  cardss.onload = function () {
+    document.getElementById("fbcards").innerHTML = this.responseText;
+  };
 
+  console.log(cardss);
 
-    let cardss = new XMLHttpRequest();
-    cardss.onload = function(){
+  if (x != null) {
+    cardss.open("GET", "php/cards.php?q=" + x);
+  } else {
+    cardss.open("GET", "php/cards.php");
+  }
 
-        document.getElementById("fbcards").innerHTML = this.responseText;
-
-    }
-
-    console.log(cardss);
-
-    if(x!=null){
-
-        cardss.open("GET","cards.php?q="+x);
-        
-    }
-    else{
-
-        cardss.open("GET","cards.php");
-
-    }
-
-    cardss.send();
-
+  cardss.send();
 }
