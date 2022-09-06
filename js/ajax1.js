@@ -3,7 +3,7 @@ function gerarcate() {
   catsidebar.onload = function () {
     document.getElementById("catsidebar").innerHTML = this.responseText;
   };
-  catsidebar.open("GET", "phpp/categorias.php");
+  catsidebar.open("GET", "categorias.php");
   catsidebar.send();
 }
 function gerarcards(x) {
@@ -15,9 +15,9 @@ function gerarcards(x) {
   console.log(cardss);
 
   if (x != null) {
-    cardss.open("GET", "phpp/cards.php?q=" + x);
+    cardss.open("GET", "cards.php?q=" + x);
   } else {
-    cardss.open("GET", "phpp/cards.php");
+    cardss.open("GET", "cards.php");
   }
 
   cardss.send();
