@@ -3,34 +3,38 @@ div.log1 {
   margin: auto;
   width: 500px;
   height: 600px;
-  border: solid red 1px;
+  border: solid rgb(85, 85, 85) 4px;
   top: 100px;
+  border-radius: 20px;
+  background-color: rgb(194, 194, 194);
 }
 div.midmid {
   position: relative;
   margin: auto;
-  border: blue solid 1px;
   height: 100%;
-  width: fit-content;
-}
-div.test1 {
-  top: 40px;
-  position: relative;
   width: 400px;
-  height: 50px;
-  border: solid 1px yellow;
 }
-div.test2 {
-  top: 80px;
-  position: relative;
-  width: 400px;
-  height: 50px;
-  border: solid 1px purple;
+div.nome {
+  top: 100px;
+  position: absolute;
+  width: 100%;
+  height: 70px;
 }
-div.test3 {
-  top: 30px;
-  position: relative;
-  width: 400px;
-  height: 50px;
-  border: solid 1px green;
+div.senha {
+  top: 260px;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+}
+div.bota {
+  top: 470px;
+  position: absolute;
+  right: 20%;
+  left: 20%;
+  margin: auto;
+  height: 70px;
+}
+input {
+  height: 100%;
+  width: 100%;
 }
