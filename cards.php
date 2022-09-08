@@ -1,7 +1,4 @@
 <?php
-
-include "conexao.php";
-
 if (!isset($_GET["q"])) {
   $cardres = $conn->query("SELECT id,descricao,valor,imagem FROM produtos");
 } else {

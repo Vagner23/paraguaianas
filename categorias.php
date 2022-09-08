@@ -1,7 +1,4 @@
 <?php
-
-include "conexao.php";
-
 $sqlca = "SELECT * FROM categorias WHERE categoria_pai=:catpai";
 
 $categpais = $conn->prepare($sqlca);

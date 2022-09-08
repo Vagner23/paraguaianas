@@ -13,7 +13,10 @@
     <body>
 
         <?php
-        include "conexao.php";
+
+        if($_SESSION['us']!=false){
+            include "conexao.php";
+        }
 
         $inf = $conn->prepare("SELECT * FROM produtos WHERE id=:id");
         $inf->execute(["id" => $_GET["id"]]);
@@ -31,7 +34,7 @@
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="prin.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="prin.php">Home</a>
                     </li>
                 </ul>
             </div>

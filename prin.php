@@ -1,3 +1,12 @@
+<?php
+
+  session_start();
+
+  if($_SESSION['us']!=false){
+    include "conexao.php";
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,15 +33,35 @@
     <header class="header">commerce</header>
 
     <nav class="navbar navbar-expand-lg dcdc">
+
       <div class="container-fluid">
+
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="prin.html"
+            <a class="nav-link active" aria-current="page" href="prin.php"
               >Home</a
             >
           </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="prin.php"
+              >loggout</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="pod" aria-current="page" href="prin.php"
+              >carrinho</a
+            >
         </ul>
+        
       </div>
+      <div class="navbar-collapse collapse w-101 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">carrinho</a>
+            </li>
+        </ul>
+    </div>
     </nav>
 
     <div class="fh">
