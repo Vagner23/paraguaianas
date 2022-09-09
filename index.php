@@ -57,15 +57,19 @@
     <?php
 
       echo "<br><br><br><br><br><br>";
+      if(isset($_POST['env']) and isset($_POST['nome'])and isset($_POST['senha']));
+        $lolo  = $conn->prepare('SELECT * FROM usuarios WHERE loin=:loin AND senha=md5(:senha)');
+        $lolo->execute(array('senha'=>$_POST['senha'],'loin'=>$_POST['nome']));
 
-      if(isset($_POST['env']) and $_POST['senha']!="" and $_POST['nome']!=""){
+        $r = $lolo->fetch();
 
-        $lolo  = $conn->prepare('SELECT * FROM usuarios WHERE login=:login AND senha=md5(:senha)');
-        $lolo->execute(array('senha'=>$_POST['senha'],'login'=>$_POST['senha']));
+          if($r!=null){
 
-        print_r($lolo);
-        
-      }  
+            $_SESSION['us']=$r[1];
+
+            header('location:prin.php');
+
+        }
     ?>
   </body>
 </html>
