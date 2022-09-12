@@ -22,7 +22,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/stylel.css" />
   </head>
-  <body>
+  <body style>
     <div class="log1">
       <div class="midmid">
 
@@ -56,8 +56,8 @@
     </div>
     <?php
 
-      echo "<br><br><br><br><br><br>";
-      if(isset($_POST['env']) and isset($_POST['nome'])and isset($_POST['senha']));
+      if(isset($_POST['env']) and isset($_POST['nome']) and isset($_POST['senha'])){
+
         $lolo  = $conn->prepare('SELECT * FROM usuarios WHERE loin=:loin AND senha=md5(:senha)');
         $lolo->execute(array('senha'=>$_POST['senha'],'loin'=>$_POST['nome']));
 
@@ -70,6 +70,7 @@
             header('location:prin.php');
 
         }
+      }
     ?>
   </body>
 </html>

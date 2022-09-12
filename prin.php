@@ -2,10 +2,6 @@
 
   session_start();
 
-  if($_SESSION['us']!=false){
-    include "conexao.php";
-  }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +40,7 @@
           </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="prin.php"
+            <a class="nav-link active" aria-current="page" href="index.php"
               >loggout</a
             >
           </li>
@@ -55,13 +51,7 @@
         </ul>
         
       </div>
-      <div class="navbar-collapse collapse w-101 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">carrinho</a>
-            </li>
-        </ul>
-    </div>
+      
     </nav>
 
     <div class="fh">

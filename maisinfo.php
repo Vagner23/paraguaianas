@@ -14,6 +14,8 @@
 
         <?php
 
+        session_start();
+
         if($_SESSION['us']!=false){
             include "conexao.php";
         }
@@ -33,9 +35,19 @@
         <nav class="navbar navbar-expand-lg dcdc">
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="prin.php">Home</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php">loggout</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pod" aria-current="page" href="prin.php">carrinho</a>
+                    </li>
+                    
                 </ul>
             </div>
         </nav>
