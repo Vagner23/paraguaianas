@@ -10,20 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/ajax1.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"crossorigin="anonymous"/>
     <title>Document</title>
   </head>
   <body>
-    <script>
-      gerarcards();
-      gerarcate();
-    </script>
-    <link rel="stylesheet" href="css/style1.css" />
     <link rel="stylesheet" href="css/style2.css" />
 
     <header class="header">commerce</header>
@@ -53,11 +43,3 @@
       </div>
       
     </nav>
-
-    <div class="fh">
-      <div class="sidebar" id="catsidebar"></div>
-
-      <div class="fbcards" id="fbcards"></div>
-    </div>
-  </body>
-</html>

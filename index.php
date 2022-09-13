@@ -66,6 +66,7 @@
           if($r!=null){
 
             $_SESSION['us']=$r[1];
+            $_SESSION['usid']=$r[0];
 
             header('location:prin.php');
 

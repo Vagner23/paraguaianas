@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" id="pod" aria-current="page" href="prin.php">carrinho</a>
+                        <a class="nav-link active" id="pod" aria-current="page" href="cart.php">carrinho</a>
                     </li>
                     
                 </ul>
@@ -65,9 +65,7 @@
         $p = implode("<br>", $p);
         ?>
         <div class="contai">
-            <button class="comp btn btn-success">adiconar ao carrinho - <?php echo $inf[
-              "valor"
-            ]; ?></button>
+            <button class="comp btn btn-success" onclick="addcart(<?php echo $_GET['id'];?>)">adiconar ao carrinho - <?php echo $inf["valor"]; ?></button>
         </div>
         <?php echo '<div class="info">
         <strong>resumo:</strong><br>' .
@@ -78,6 +76,9 @@
           $p .
           '
         </div>'; ?>
+
+        <div id="codfod"></div>
+
     </body>
 
 </html>
