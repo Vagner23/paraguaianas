@@ -8,6 +8,8 @@ function addcart(sex){
     }
     cartbglh.open("GET","cartop.php?proid="+sex);
     cartbglh.send();
+
+    console.log(XMLHttpRequest);
     
 
 }

@@ -68,7 +68,7 @@
             $_SESSION['us']=$r[1];
             $_SESSION['usid']=$r[0];
 
-            header('location:prin.php');
+            header('location:prin.html');
 
         }
       }

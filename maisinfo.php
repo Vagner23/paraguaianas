@@ -37,7 +37,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="prin.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="prin.html">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" id="pod" aria-current="page" href="cart.php">carrinho</a>
+                        <a class="nav-link active" id="pod" aria-current="page" href="cart.html">carrinho</a>
                     </li>
                     
                 </ul>
@@ -76,6 +76,12 @@
           $p .
           '
         </div>'; ?>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <div id="codfod"></div>
 
