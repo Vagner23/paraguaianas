@@ -2,7 +2,11 @@
 
 session_start();
 
-include "conexao.php";
+if($_SESSION['us']!=false){
+
+    include "conexao.php";
+    
+}
 
 $pro = $_GET['proid'];
 
@@ -20,9 +24,6 @@ if($vendabert==null){ //nehuma venda aberta
 
     $vendabert = $aberto->fetch();
 
-}
-else{
-    echo "ja tem";
 }
 
 $vendid= $vendabert[0];
