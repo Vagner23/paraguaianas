@@ -11,9 +11,6 @@ function gerarcards(x) {
   cardss.onload = function () {
     document.getElementById("fbcards").innerHTML = this.responseText;
   };
-
-  console.log(cardss);
-
   if (x != null) {
     cardss.open("GET", "cards.php?q=" + x);
   } else {
